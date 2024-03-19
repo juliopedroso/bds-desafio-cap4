@@ -1,0 +1,11 @@
+.movie-details-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.movie-details-container h1 {
+  font-size: 24px;
+}

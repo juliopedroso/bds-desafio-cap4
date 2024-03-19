@@ -1,0 +1,19 @@
+.review-form-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.review-submit button {
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  height: 50px;
+}
+
+@media (min-width: 576px) {
+  .review-submit button {
+    width: 330px;
+  }
+}
+
