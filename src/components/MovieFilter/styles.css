@@ -16,3 +16,9 @@
   border-color: #e1e1e1;
   border-radius: 4px;
 }
+
+@media (min-width: 1200px){
+  .movie-filter-container {   
+    padding: 15px 20px;
+  }
+}

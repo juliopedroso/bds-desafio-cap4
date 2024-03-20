@@ -19,7 +19,7 @@ const MovieCatalog = () => {
             url: "/movies",
             params: {
                 page: pageNumber,
-                size: 6,
+                size: 12,
             },
             withCredentials:true
         };
@@ -38,7 +38,7 @@ const MovieCatalog = () => {
             <div className="row">
                 {
                     page?.content.map(movie => (
-                        <div className="col-sm-6 col-md-12" key={movie.id}>
+                        <div className="col-sm-6 col-xl-3" key={movie.id}>
                             <MovieCard movie={movie}  ></MovieCard>
                         </div>
                     ))
