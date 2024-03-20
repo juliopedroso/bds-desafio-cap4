@@ -2,6 +2,7 @@ import { AxiosRequestConfig } from "axios";
 import MovieCard from "components/MovieCard";
 import MovieFilter from "components/MovieFilter";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Movie } from "types/movie";
 import { SpringPage } from 'types/vendor/spring';
 import { requestBackend } from "util/request";
@@ -21,7 +22,7 @@ const MovieCatalog = () => {
                 page: pageNumber,
                 size: 12,
             },
-            withCredentials:true
+            withCredentials: true
         };
 
         requestBackend(params)
@@ -39,7 +40,9 @@ const MovieCatalog = () => {
                 {
                     page?.content.map(movie => (
                         <div className="col-sm-6 col-xl-3" key={movie.id}>
-                            <MovieCard movie={movie}  ></MovieCard>
+                            <Link to={`/movies/${movie.id}`}>
+                                <MovieCard movie={movie} ></MovieCard>
+                            </Link>
                         </div>
                     ))
                 }
