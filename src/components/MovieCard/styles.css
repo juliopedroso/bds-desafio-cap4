@@ -1,1 +1,30 @@
+.movie-card {
+  margin-bottom: 30px;
+}
 
+.movie-card-top-container {
+  padding: 25px 0px 10px 0px;
+}
+
+.movie-card-top-container img {
+  width: 100%;
+}
+
+.movie-card-bottom-container{
+  margin: 0px 15px;
+  min-height: 120px;
+}
+
+.movie-card-bottom-container h1 {
+  font-size: 20px;
+}
+
+.movie-card-bottom-container h2 {
+  font-size: 16px;
+  color: #ffc700;
+}
+
+.movie-card-bottom-container h4 {
+    font-weight: normal;
+    font-size: 14px;  
+}

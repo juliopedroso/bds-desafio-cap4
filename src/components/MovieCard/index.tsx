@@ -16,13 +16,13 @@ const MovieCard = () => {
 
     return (
         <div className="base-card movie-card">
-            <div className="card-top-container">
+            <div className="movie-card-top-container">
                 <img src={movie.imgUrl} alt={movie.title} />
             </div>
-            <div className="card-bottom-container">
-                <h6>{movie.title}</h6>
-                <h6>{movie.year}</h6>
-                <span>{movie.subTitle}</span>
+            <div className="movie-card-bottom-container">
+                <h1>{movie.title}</h1>
+                <h2>{movie.year}</h2>
+                <h4><span>{movie.subTitle}</span></h4>
 
             </div>
         </div>
