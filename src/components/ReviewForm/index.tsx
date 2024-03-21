@@ -46,7 +46,7 @@ const ReviewForm = ({ movieId,onInsertReview }: Props) => {
     return (
         <div className="base-card container review-form-container">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="mb-3">
+                <div className="">
                     <input
                         {...register('text', {
                             required: 'Campo obrigatório'

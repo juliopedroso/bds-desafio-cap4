@@ -18,7 +18,7 @@ const MovieCard = ({movie} : Props) => {
             <div className="movie-card-bottom-container">
                 <h1>{movie.title}</h1>
                 <h2>{movie.year}</h2>
-                <h4><span>{movie.subTitle}</span></h4>
+                <h4>{movie.subTitle}</h4>
 
             </div>
         </div>

@@ -30,9 +30,8 @@ const MovieCatalog = () => {
                 setPage(response.data);
             });
     }
-
     return (
-        <div className="container my-4 catalog-container">
+        <div className="container my-4">
             <div className="movie-filter-bar-container">
                 <MovieFilter />
             </div>
@@ -46,9 +45,7 @@ const MovieCatalog = () => {
                         </div>
                     ))
                 }
-
             </div>
-
         </div>
     )
 }
