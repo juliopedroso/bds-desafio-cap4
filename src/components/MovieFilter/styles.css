@@ -8,17 +8,26 @@
   height: 50px;
 }
 
-.movie-filter-genre-container select {
-  width: 100%;
+.movie-filter-select{
   height: 100%;
-  background-color: #6c6c6c;
-  color: #ffffff;
   border-color: #e1e1e1;
   border-radius: 4px;
 }
 
-@media (min-width: 1200px){
-  .movie-filter-container {   
+.movie-filter-select__control {
+  font-size: 1em;
+  letter-spacing: -0.015em;
+  background-color: #6c6c6c !important;
+  color:#ffffff !important;
+}
+
+.movie-filter-select__indicator-separator {
+  display: none;
+}
+
+@media (min-width: 1200){
+  .movie-filter-container {
+   
     padding: 15px 20px;
   }
 }
