@@ -21,7 +21,7 @@ const MovieCatalog = () => {
             url: "/movies",
             params: {
                 page: pageNumber,
-                size: 12,
+                size: 2,
             },
             withCredentials: true
         };
@@ -31,6 +31,10 @@ const MovieCatalog = () => {
                 setPage(response.data);
             });
     }
+    const handlePageChange = (pageNumber: number) => {
+        getMovies(pageNumber)
+    }
+
     return (
         <div className="container my-4">
             <div className="movie-filter-bar-container">
@@ -47,7 +51,12 @@ const MovieCatalog = () => {
                     ))
                 }
             </div>
-            <Pagination/>
+            <Pagination
+                forcePage={page?.number}
+                pageCount={(page) ? page?.totalPages : 0}
+                range={3}
+                onChange={handlePageChange}
+            />
         </div>
     )
 }
